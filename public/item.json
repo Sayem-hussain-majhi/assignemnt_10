@@ -1,0 +1,246 @@
+[
+    {
+      "name": "Toyota",
+      "img": "https://example.com/toyota.jpg",
+      "products": [
+        {
+          "productName": "Camry",
+          "img": "https://i.ibb.co/HHXdYbm/car4.jpg",
+          "brand": "Toyota",
+          "price": 30000,
+          "details": "A reliable and fuel-efficient sedan."
+        },
+        {
+          "productName": "Rav4",
+          "img": "https://i.ibb.co/Fzh4jzc/car3.jpg",
+          "brand": "Toyota",
+          "price": 28000,
+          "details": "A versatile and spacious SUV."
+        },
+        {
+          "productName": "Corolla",
+          "img": "https://i.ibb.co/VjnWxzY/car1.webp",
+          "brand": "Toyota",
+          "price": 25000,
+          "details": "An economical and practical compact car."
+        },
+        {
+          "productName": "Highlander",
+          "img": "https://i.ibb.co/HHXdYbm/car4.jpg",
+          "brand": "Toyota",
+          "price": 35000,
+          "details": "A midsize SUV with a smooth ride."
+        },
+        {
+          "productName": "Prius",
+          "img": "https://i.ibb.co/VjnWxzY/car1.webp",
+          "brand": "Toyota",
+          "price": 27000,
+          "details": "A hybrid car known for fuel efficiency."
+        },
+        {
+          "productName": "Tacoma",
+          "img": "https://i.ibb.co/Fzh4jzc/car3.jpg",
+          "brand": "Toyota",
+          "price": 32000,
+          "details": "A rugged and durable pickup truck."
+        }
+      ]
+    },
+    {
+      "name": "Honda",
+      "img": "https://example.com/honda.jpg",
+      "products": [
+        {
+          "productName": "Accord",
+          "img": "https://i.ibb.co/VjnWxzY/car1.webp",
+          "brand": "Honda",
+          "price": 29000,
+          "details": "A well-balanced and comfortable sedan."
+        },
+        {
+          "productName": "Pilot",
+          "img": "https://i.ibb.co/HHXdYbm/car4.jpg",
+          "brand": "Honda",
+          "price": 36000,
+          "details": "A family-friendly midsize SUV."
+        },
+        {
+          "productName": "Fit",
+          "img": "https://i.ibb.co/VjnWxzY/car1.webp",
+          "brand": "Honda",
+          "price": 22000,
+          "details": "A compact car with efficient use of space."
+        },
+        {
+          "productName": "Crosstour",
+          "img": "https://i.ibb.co/Fzh4jzc/car3.jpg",
+          "brand": "Honda",
+          "price": 31000,
+          "details": "A stylish crossover with a sporty design."
+        },
+        {
+          "productName": "Odyssey",
+          "img": "https://i.ibb.co/VjnWxzY/car1.webp",
+          "brand": "Honda",
+          "price": 33000,
+          "details": "A minivan designed for family adventures."
+        },
+        {
+          "productName": "Ridgeline",
+          "img": "https://i.ibb.co/Fzh4jzc/car3.jpg",
+          "brand": "Honda",
+          "price": 34000,
+          "details": "A versatile and innovative pickup truck."
+        }
+      ]
+    },
+    {
+      "name": "Ford",
+      "img": "https://example.com/ford.jpg",
+      "products": [
+        {
+          "productName": "Fusion",
+          "img": "https://i.ibb.co/HHXdYbm/car4.jpg",
+          "brand": "Ford",
+          "price": 27000,
+          "details": "A stylish and tech-savvy midsize sedan."
+        },
+        {
+          "productName": "Explorer",
+          "img": "https://i.ibb.co/VjnWxzY/car1.webp",
+          "brand": "Ford",
+          "price": 32000,
+          "details": "A popular and spacious midsize SUV."
+        },
+        {
+          "productName": "Mustang",
+          "img": "https://i.ibb.co/Fzh4jzc/car3.jpg",
+          "brand": "Ford",
+          "price": 38000,
+          "details": "An iconic and powerful sports car."
+        },
+        {
+          "productName": "Escape",
+          "img": "https://i.ibb.co/VjnWxzY/car1.webp",
+          "brand": "Ford",
+          "price": 28000,
+          "details": "A compact SUV designed for city living."
+        },
+        {
+          "productName": "F-150",
+          "img": "https://i.ibb.co/Fzh4jzc/car3.jpg",
+          "brand": "Ford",
+          "price": 35000,
+          "details": "America's best-selling full-size pickup."
+        },
+        {
+          "productName": "Edge",
+          "img": "https://i.ibb.co/VjnWxzY/car1.webp",
+          "brand": "Ford",
+          "price": 30000,
+          "details": "A stylish and comfortable midsize SUV."
+        }
+      ]
+    },
+    {
+      "name": "Chevrolet",
+      "img": "https://example.com/chevrolet.jpg",
+      "products": [
+        {
+          "productName": "Malibu",
+          "img": "https://i.ibb.co/HHXdYbm/car4.jpg",
+          "brand": "Chevrolet",
+          "price": 28000,
+          "details": "A midsize sedan with modern features."
+        },
+        {
+          "productName": "Equinox",
+          "img": "https://i.ibb.co/VjnWxzY/car1.webp",
+          "brand": "Chevrolet",
+          "price": 30000,
+          "details": "A compact SUV offering versatility."
+        },
+        {
+          "productName": "Camaro",
+          "img": "https://i.ibb.co/Fzh4jzc/car3.jpg",
+          "brand": "Chevrolet",
+          "price": 35000,
+          "details": "A classic American sports car."
+        },
+        {
+          "productName": "Traverse",
+          "img": "https://i.ibb.co/VjnWxzY/car1.webp",
+          "brand": "Chevrolet",
+          "price": 34000,
+          "details": "A family-friendly midsize SUV."
+        },
+        {
+          "productName": "Silverado",
+          "img": "https://i.ibb.co/Fzh4jzc/car3.jpg",
+          "brand": "Chevrolet",
+          "price": 38000,
+          "details": "A rugged and dependable full-size pickup."
+        },
+        {
+          "productName": "Spark",
+          "img": "https://i.ibb.co/VjnWxzY/car1.webp",
+          "brand": "Chevrolet",
+          "price": 15000,
+          "details": "A compact car designed for urban driving."
+        }
+      ]
+    },
+    {
+      "name": "BMW",
+      "img": "https://example.com/bmw.jpg",
+      "products": [
+        {
+          "productName": "3 Series",
+          "img": "https://i.ibb.co/Fzh4jzc/car3.jpg",
+          "brand": "BMW",
+          "price": 40000,
+          "details": "A luxury compact car with dynamic performance."
+        },
+        {
+          "productName": "X5",
+          "img": "https://i.ibb.co/VjnWxzY/car1.webp",
+          "brand": "BMW",
+          "price": 60000,
+          "details": "A premium midsize SUV combining elegance and power."
+        },
+        {
+          "productName": "i8",
+          "img": "https://i.ibb.co/HHXdYbm/car4.jpg",
+          "brand": "BMW",
+          "price": 150000,
+          "details": "A futuristic and high-performance plug-in hybrid."
+        },
+        {
+          "productName": "7 Series",
+          "img": "https://i.ibb.co/VjnWxzY/car1.webp",
+          "brand": "BMW",
+          "price": 80000,
+          "details": "An executive sedan with cutting-edge technology."
+        },
+        {
+          "productName": "X3",
+          "img": "https://i.ibb.co/Fzh4jzc/car3.jpg",
+          "brand": "BMW",
+          "price": 45000,
+          "details": "A compact luxury SUV with a spacious interior."
+        },
+        {
+          "productName": "M5",
+          "img": "https://i.ibb.co/VjnWxzY/car1.webp",
+          "brand": "BMW",
+          "price": 100000,
+          "details": "A high-performance sports sedan with precision engineering."
+        }
+      ]
+    }
+  ]
+  
+
+  
+  
