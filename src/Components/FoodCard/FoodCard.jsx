@@ -16,10 +16,12 @@ const FoodCard = ({ item }) => {
                     <p className="font-bold text-xl">{brand}</p>
                     <p>{details}</p>
                     <div className="space-x-32">
-                        <button className="btn btn-outline border-0 border-b-4 border-orange-400 bg-slate-200 uppercase">update</button>
+                    <Link to={`/update/${_id}`}>
+                            <button className="btn btn-outline border-0 border-b-4 border-orange-400 bg-slate-200 uppercase ">Update</button>
+                        </Link>
                        
                         <Link to={`/detailes/${_id}`}>
-                            <button className="btn btn-outline border-0 border-b-4 border-orange-400 bg-slate-200 uppercase ">detailes</button>
+                            <button className="btn btn-outline border-0 border-b-4 border-orange-400 bg-slate-200 uppercase ">Detailes</button>
                         </Link>
                     </div>
                 </div>

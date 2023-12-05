@@ -11,6 +11,9 @@ import SignUp from "../Pages/signUp/signUp";
 import Detailes from "../Pages/Detailes/Detailes";
 import CarItems from "../Pages/Manu/CarItems";
 import AddProduct from "../Pages/AddProduct/AddProduct";
+import MyCart from "../Pages/MyCart/MyCart";
+import Update from "../Pages/Update/Update";
+import PrivateRoute from "./PrivateRoute";
 
   export const router = createBrowserRouter([
     {
@@ -23,7 +26,7 @@ import AddProduct from "../Pages/AddProduct/AddProduct";
         },
         {
           path: '/addProduct',
-          element: <AddProduct></AddProduct>
+          element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
         },
         {
           path: `/carItems/:name`,
@@ -32,7 +35,8 @@ import AddProduct from "../Pages/AddProduct/AddProduct";
         }, 
         {
           path: '/myCart',
-          element: <Order></Order>
+          element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
+          loader: ()=> fetch('https://car-store-server-theta.vercel.app/addToCartItems')
         },
         {
           path: '/login',
@@ -44,7 +48,12 @@ import AddProduct from "../Pages/AddProduct/AddProduct";
         },
         { 
           path: `/detailes/:id`,
-          element: <Detailes></Detailes>,
+          element: <PrivateRoute><Detailes></Detailes></PrivateRoute>,
+          loader: ({params})=> fetch(`https://car-store-server-theta.vercel.app/brandItems/${params.id}`)
+        },
+        { 
+          path: `/update/:id`,
+          element: <PrivateRoute><Update></Update></PrivateRoute>,
           loader: ({params})=> fetch(`https://car-store-server-theta.vercel.app/brandItems/${params.id}`)
         }
       ]
