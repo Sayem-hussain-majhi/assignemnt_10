@@ -1,12 +1,18 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../Provaider/AuthProvaider";
 
 const Navber = () => {
+    const {user, logOut} = useContext(AuthContext)
 
     const navOptions = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/addProduct'> Add Product</Link></li>
         <li><Link to='/myCart'>My Cart</Link></li>
-        <li><Link to='/login'>Login</Link></li>
+        {
+            user ? <li><Link onClick={logOut}>Logout</Link></li>
+            : <li className="text-white"><Link  to='/login'>Login</Link></li>
+        }
     </>
 
     return (

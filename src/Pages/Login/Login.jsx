@@ -1,19 +1,23 @@
 import { useContext, useEffect, useRef, useState } from 'react';
-import { loadCaptchaEnginge, LoadCanvasTemplate, validateCaptcha } from 'react-simple-captcha';
+
 import { AuthContext } from '../../Provaider/AuthProvaider';
-import { Link } from "react-router-dom";
+import { Link,  useNavigate } from "react-router-dom";
 
 
 const Login = () => {
     const captchaRef = useRef(null)
-    const [disabled, setDisabled] = useState(true)
-
-    const {signIn} = useContext(AuthContext)
+    const navigate = useNavigate()
 
 
-  useEffect(()=>{
-    loadCaptchaEnginge(6); 
-  },[])
+    const {signIn, google} = useContext(AuthContext)
+
+    const handleGoogle= ()=>{
+      google()
+      navigate('/')
+    }
+
+
+
 
   const handleLogin =(event)=>{
     event.preventDefault()
@@ -43,7 +47,7 @@ const Login = () => {
       <div className="hero-content flex-col md:flex-row-reverse">
         <div className="text-center md:w-1/2 lg:text-left">
           <h1 className="text-5xl font-bold">Login now!</h1>
-          <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+        
         </div>
         <div className="card  md:w-1/2 max-w-lg shadow-2xl bg-base-100">
           <form onSubmit={handleLogin} className="card-body">
@@ -62,18 +66,17 @@ const Login = () => {
                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
               </label>
             </div>
-            <div className="form-control">
-              <label className="label">
-              <LoadCanvasTemplate />
-              </label>
-              <input type="text" ref={captchaRef}  className="input input-bordered" name="captcha" placeholder='type the catcha above' required />
-              <button onClick={handleValidateCaptcha} className='btn btn-outline btn-xs mt-3'>validate</button>
-            </div>
+           
             <div className="form-control mt-6">
-              <input disabled={disabled} className="btn btn-primary" type="submit" value="Login" />
+              <input className="btn btn-primary" type="submit" value="Login" />
             </div>
           </form>
-          <p><small>New here <Link to='/signup'>create an account</Link> </small></p>
+         
+         
+
+          <p onClick={handleGoogle} className='btn btn-ghost text-xl font-bold text-center py-3'><small>Google </small></p>
+          <div className='divider'>Or</div>
+          <p className='text-xl font-bold text-center'><small>New here <Link to='/signup'>create an account</Link> </small></p>
           
         </div>
       </div>
