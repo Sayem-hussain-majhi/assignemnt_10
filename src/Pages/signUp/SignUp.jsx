@@ -67,7 +67,7 @@ const SignUp = () => {
               <input type="password" {...register("password", { required: true })} placeholder="password" className="input input-bordered" name="password" required />
               {errors.password && <span>This field is required</span>}
               <label className="label">
-                <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+               
               </label>
             </div>
 
